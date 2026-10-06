@@ -774,73 +774,73 @@ jobs:
           git commit -m "Regenerate iOS 27 diffs with compact context"
           git push origin HEAD:main
 
-recover_artifacts:
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.recover_artifacts == true }}
-    permissions:
-      contents: write
-      actions: read
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout diff repo
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 1
+  recover_artifacts:
+      if: ${{ github.event_name == 'workflow_dispatch' && inputs.recover_artifacts == true }}
+      permissions:
+        contents: write
+        actions: read
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout diff repo
+          uses: actions/checkout@v4
+          with:
+            ref: main
+            fetch-depth: 1
 
-      - name: Download full backfill artifacts
-        uses: actions/download-artifact@v4
-        with:
-          pattern: ios27-diff-*
-          path: ${{ runner.temp }}/base
-          merge-multiple: true
-          repository: satomasahiro2005/ipsw-diffs
-          run-id: 37410209189
-          github-token: ${{ github.token }}
+        - name: Download full backfill artifacts
+          uses: actions/download-artifact@v4
+          with:
+            pattern: ios27-diff-*
+            path: ${{ runner.temp }}/base
+            merge-multiple: true
+            repository: satomasahiro2005/ipsw-diffs
+            run-id: 37410209189
+            github-token: ${{ github.token }}
 
-      - name: Download repaired 01-04 artifacts
-        uses: actions/download-artifact@v4
-        with:
-          pattern: ios27-diff-*
-          path: ${{ runner.temp }}/repair
-          merge-multiple: true
-          repository: satomasahiro2005/ipsw-diffs
-          run-id: 37414864017
-          github-token: ${{ github.token }}
+        - name: Download repaired 01-04 artifacts
+          uses: actions/download-artifact@v4
+          with:
+            pattern: ios27-diff-*
+            path: ${{ runner.temp }}/repair
+            merge-multiple: true
+            repository: satomasahiro2005/ipsw-diffs
+            run-id: 37414864017
+            github-token: ${{ github.token }}
 
-      - name: Replace iOS 27 directories
-        run: |
-          set -euo pipefail
-          copy_dirs() {
-            local root="$1"
-            shopt -s nullglob
-            local dirs=("$root"/*)
-            for src in "${dirs[@]}"; do
-              [ -d "$src" ] || continue
-              name="$(basename "$src")"
-              case "$name" in
-                27_*) ;;
-                *)
-                  echo "::error::Unexpected output directory: $name"
-                  exit 1
-                  ;;
-              esac
-              rm -rf "iOS/$name"
-              cp -a "$src" iOS/
-            done
-          }
+        - name: Replace iOS 27 directories
+          run: |
+            set -euo pipefail
+            copy_dirs() {
+              local root="$1"
+              shopt -s nullglob
+              local dirs=("$root"/*)
+              for src in "${dirs[@]}"; do
+                [ -d "$src" ] || continue
+                name="$(basename "$src")"
+                case "$name" in
+                  27_*) ;;
+                  *)
+                    echo "::error::Unexpected output directory: $name"
+                    exit 1
+                    ;;
+                esac
+                rm -rf "iOS/$name"
+                cp -a "$src" iOS/
+              done
+            }
 
-          copy_dirs "${{ runner.temp }}/base"
-          copy_dirs "${{ runner.temp }}/repair"
+            copy_dirs "${{ runner.temp }}/base"
+            copy_dirs "${{ runner.temp }}/repair"
 
-      - name: Commit recovered diffs
-        run: |
-          set -euo pipefail
-          git config user.name 'satomasahiro2005'
-          git config user.email 'satomasahiro2005@users.noreply.github.com'
-          git add iOS
-          if git diff --cached --quiet; then
-            echo "::error::Recovery produced no iOS changes"
-            exit 1
-          fi
-          git commit -m "Regenerate iOS 27 diffs with compact output"
-          git push origin HEAD:main
+        - name: Commit recovered diffs
+          run: |
+            set -euo pipefail
+            git config user.name 'satomasahiro2005'
+            git config user.email 'satomasahiro2005@users.noreply.github.com'
+            git add iOS
+            if git diff --cached --quiet; then
+              echo "::error::Recovery produced no iOS changes"
+              exit 1
+            fi
+            git commit -m "Regenerate iOS 27 diffs with compact output"
+            git push origin HEAD:main
