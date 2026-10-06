@@ -1,7 +1,6 @@
 name: Diff
 
-# Automatically diffs each newly-released macOS and iOS build against the
-# previously-recorded one. A cron polls AppleDB a few times a day; a run only
+# Experimental fork: diff iOS 27+ builds against the previously-recorded one. A cron polls AppleDB a few times a day; a run only
 # does work when a build it has not already diffed appears. Manual runs with
 # explicit builds are still supported via workflow_dispatch.
 on:
@@ -54,9 +53,6 @@ jobs:
       max-parallel: 1
       matrix:
         include:
-          - os: macOS
-            device: Mac17,6
-            output: macOS
           - os: iOS
             device: iPhone18,1
             output: iOS
@@ -142,9 +138,10 @@ jobs:
           MANUAL_PREV: ${{ github.event.inputs.prev_build }}
           MANUAL_NEXT: ${{ github.event.inputs.next_build }}
           GITHUB_TOKEN: ${{ github.token }}
+          MIN_MAJOR: "27"
         run: |
           set -euo pipefail
-          cache_file=".cache/${MATRIX_OS}.json"
+          cache_file=".cache/${MATRIX_OS}-27plus.json"
 
           # Manual override: caller supplied both builds explicitly.
           if [ -n "$MANUAL_PREV" ] && [ -n "$MANUAL_NEXT" ]; then
@@ -179,6 +176,12 @@ jobs:
           # previous build of its OWN major, and only forward in time.
           next_major="$(printf '%s' "$next_version" | grep -oE '^[0-9]+')"
           echo "Latest $MATRIX_OS: $next_version ($next_build), major ${next_major}"
+
+          if [ "$next_major" -lt "$MIN_MAJOR" ]; then
+            echo "Skipping $MATRIX_OS $next_version: this fork only generates major $MIN_MAJOR and newer"
+            echo "do_diff=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
           record_baseline() {
             mkdir -p .cache
