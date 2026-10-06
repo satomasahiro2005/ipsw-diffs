@@ -33,6 +33,11 @@ on:
         required: false
         default: false
         type: boolean
+      repair_first4:
+        description: 'Re-run only backfill pairs 01-04 with the latest ipsw fork'
+        required: false
+        default: false
+        type: boolean
 
 # Least privilege: nothing by default, the job opts into contents:write so it
 # can commit and push new diffs.
@@ -46,7 +51,7 @@ concurrency:
 
 jobs:
   diff:
-    if: ${{ github.event_name != 'workflow_dispatch' || inputs.backfill_27 != true }}
+    if: ${{ github.event_name != 'workflow_dispatch' || (inputs.backfill_27 != true && inputs.repair_first4 != true) }}
     permissions:
       contents: write
       models: read
@@ -107,6 +112,7 @@ jobs:
           fetch-depth: 1
 
       - name: Set up Go
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true'
         uses: actions/setup-go@v6
         with:
@@ -114,6 +120,7 @@ jobs:
           cache-dependency-path: .ipsw-src/go.sum
 
       - name: Build forked ipsw
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true'
         run: |
           set -euo pipefail
@@ -127,6 +134,7 @@ jobs:
       # AppleDB is cloned locally for --show-latest; cache it so each poll
       # doesn't re-clone hundreds of MB.
       - name: Cache AppleDB
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
@@ -272,6 +280,7 @@ jobs:
       # ipsw still diffs the kernelcache and firmware (they live unencrypted in
       # the IPSW), but the filesystem half of the diff is silently empty.
       - name: Install apfs-fuse
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true' && steps.detect.outputs.do_diff == 'true'
         env:
           # Pinned: sgan81/apfs-fuse master has been stable since 2023-03-12.
@@ -293,6 +302,7 @@ jobs:
       # Kernel symbolicator signatures, so the kernelcache/KEXT diff carries
       # function names. Version-keyed under kernel/; ipsw picks the right set.
       - name: Fetch symbolicator signatures
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true' && steps.detect.outputs.do_diff == 'true'
         run: git clone --quiet --depth 1 https://github.com/blacktop/symbolicator.git "$RUNNER_TEMP/symbolicator"
 
@@ -303,6 +313,7 @@ jobs:
       # GitHub is moving to single-disk images where /mnt may be absent, so fall
       # back to / and size to whatever the chosen disk can spare.
       - name: Add swap
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true' && steps.detect.outputs.do_diff == 'true'
         run: |
           set -euo pipefail
@@ -324,6 +335,7 @@ jobs:
           free -h
 
       - name: Download and diff
+        if: steps.pair_gate.outputs.run == 'true'
         if: steps.gate.outputs.run == 'true' && steps.detect.outputs.do_diff == 'true'
         env:
           MATRIX_OS: ${{ matrix.os }}
@@ -485,7 +497,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
   backfill27_diff:
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.backfill_27 == true }}
+    if: ${{ github.event_name == 'workflow_dispatch' && (inputs.backfill_27 == true || inputs.repair_first4 == true) }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
@@ -534,19 +546,34 @@ jobs:
             next: "24B5099f"
 
     steps:
+      - name: Select repair pairs
+        id: pair_gate
+        env:
+          REPAIR_FIRST4: ${{ inputs.repair_first4 }}
+          PAIR_ID: ${{ matrix.id }}
+        run: |
+          if [ "$REPAIR_FIRST4" = "true" ] && [ "$PAIR_ID" -gt 4 ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout diff repo
+        if: steps.pair_gate.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 1
 
       - name: Free disk space
+        if: steps.pair_gate.outputs.run == 'true'
         uses: jlumbroso/free-disk-space@v1.3.1
         with:
           tool-cache: true
           swap-storage: false
 
       - name: Checkout compact-diff ipsw fork
+        if: steps.pair_gate.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           repository: satomasahiro2005/ipsw
@@ -661,6 +688,7 @@ jobs:
           echo "::endgroup::"
 
       - name: Upload generated diff
+        if: steps.pair_gate.outputs.run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: ios27-diff-${{ matrix.id }}
@@ -670,7 +698,7 @@ jobs:
 
   backfill27_commit:
     needs: backfill27_diff
-    if: ${{ always() && github.event_name == 'workflow_dispatch' && inputs.backfill_27 == true }}
+    if: ${{ always() && github.event_name == 'workflow_dispatch' && (inputs.backfill_27 == true || inputs.repair_first4 == true) }}
     permissions:
       contents: write
       actions: read
@@ -719,18 +747,21 @@ jobs:
           git config user.name 'satomasahiro2005'
           git config user.email 'satomasahiro2005@users.noreply.github.com'
 
-          mkdir -p .cache
-          cat > .cache/iOS-27plus.json <<'JSON'
-          {
-            "27": {
-              "version": "27.2 beta 3",
-              "build": "24B5099f",
-              "released": "2026-10-05T00:00:00Z"
+          if [ "${{ inputs.backfill_27 }}" = "true" ]; then
+            mkdir -p .cache
+            cat > .cache/iOS-27plus.json <<'JSON'
+            {
+              "27": {
+                "version": "27.2 beta 3",
+                "build": "24B5099f",
+                "released": "2026-10-05T00:00:00Z"
+              }
             }
-          }
-          JSON
-
-          git add iOS .cache/iOS-27plus.json
+            JSON
+            git add iOS .cache/iOS-27plus.json
+          else
+            git add iOS
+          fi
           if git diff --cached --quiet; then
             echo "No generated diff changes"
             exit 0
