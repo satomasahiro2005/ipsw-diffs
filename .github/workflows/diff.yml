@@ -95,16 +95,31 @@ jobs:
           tool-cache: true
           swap-storage: false
 
-      - name: Install ipsw
+      - name: Checkout forked ipsw
         if: steps.gate.outputs.run == 'true'
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: satomasahiro2005/ipsw
+          ref: diff-no-context
+          path: .ipsw-src
+          fetch-depth: 1
+
+      - name: Set up Go
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: .ipsw-src/go.mod
+          cache-dependency-path: .ipsw-src/go.sum
+
+      - name: Build forked ipsw
+        if: steps.gate.outputs.run == 'true'
         run: |
           set -euo pipefail
-          url="$(gh api repos/blacktop/ipsw/releases/latest \
-            --jq '.assets[] | select(.name | test("^ipsw_.*linux_x86_64\\.deb$")) | .browser_download_url')"
-          curl -fsSL -o /tmp/ipsw.deb "$url"
-          sudo dpkg -i /tmp/ipsw.deb
+          cd .ipsw-src
+          go build -o /tmp/ipsw ./cmd/ipsw
+          sudo install -m 0755 /tmp/ipsw /usr/local/bin/ipsw
+          cd ..
+          rm -rf .ipsw-src
           ipsw version
 
       # AppleDB is cloned locally for --show-latest; cache it so each poll
