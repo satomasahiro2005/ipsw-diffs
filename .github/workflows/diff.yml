@@ -714,7 +714,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           pattern: ios27-diff-*
-          path: "$RUNNER_TEMP/backfill"
+          path: ${{ runner.temp }}/backfill
           merge-multiple: true
 
       - name: Replace generated iOS 27 directories
